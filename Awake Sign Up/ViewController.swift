@@ -14,12 +14,39 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
 
+    @IBOutlet weak var aImage: UIImageView!
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    // Text Fields
+    
+    @IBOutlet weak var fistName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
 
+    @IBAction func signUpButtonPressed(_ sender: Any) {
+        aImage.isHidden = true
+        signUpButton.isHidden = true
+        view.backgroundColor = UIColor.white
+    }
+    
+    
+    
 }
+
+
+
+
+
+
+
+
+
 
